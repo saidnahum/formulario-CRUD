@@ -3,19 +3,20 @@
     <Input :tarea="tarea"/>
   </form>
   <hr>
-  <p>{{tarea}}</p>  
+  <ListaTareas/>  
 </template>
 
 <script>
 
 import Input from '../components/Input.vue'
+import ListaTareas from '../components/ListaTareas.vue'
 import {mapActions} from 'vuex'
 const shortid = require('shortid')
 
 export default {
   name: 'Home',
   components: {
-    Input
+    Input, ListaTareas
   },
   data() {
     return {
